@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <div class="header">
+      <div>
+        <div class="title">Calculator</div>
+        <div class="subtitle">Add • Subtract • Multiply • Divide</div>
+      </div>
+      <div class="subtitle">HTML • CSS • JS</div>
+    </div>
+
+    <div class="screen" id="screen">
+      <div class="expr" id="expression">&nbsp;</div>
+      <div class="value" id="value">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="key clear" data-action="clear">C</button>
+      <button class="key" data-action="back">⌫</button>
+      <button class="key" data-action="percent">%</button>
+      <button class="key operator" data-action="operator">÷</button>
+
+      <button class="key" data-action="digit">7</button>
+      <button class="key" data-action="digit">8</button>
+      <button class="key" data-action="digit">9</button>
+      <button class="key operator" data-action="operator">×</button>
+
+      <button class="key" data-action="digit">4</button>
+      <button class="key" data-action="digit">5</button>
+      <button class="key" data-action="digit">6</button>
+      <button class="key operator" data-action="operator">−</button>
+
+      <button class="key" data-action="digit">1</button>
+      <button class="key" data-action="digit">2</button>
+      <button class="key" data-action="digit">3</button>
+      <button class="key operator" data-action="operator">+</button>
+
+      <button class="key wide" data-action="digit">0</button>
+      <button class="key" data-action="dot">.</button>
+      <button class="key operator" data-action="equals">=</button>
+    </div>
+
+    <div class="help">Tip: You can also type using your keyboard.</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
